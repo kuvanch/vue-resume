@@ -24,7 +24,7 @@ export default {
 <style scoped>
     .list-item {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .avatar img {
