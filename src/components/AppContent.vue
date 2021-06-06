@@ -9,7 +9,7 @@
         {{info.text}}
       </p>
       <h3>Добавьте первый блок, чтобы увидеть результат</h3>
-      <button class="btn primary" @click="$emit('server')">Сохранить резюме</button>
+      <button class="btn primary" :disabled='info.title.length === 0 && info.subtitle.length === 0' @click="$emit('server')">Сохранить резюме</button>
     </div>
 </template>
 
