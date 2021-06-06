@@ -12,7 +12,7 @@
 
         <div class="form-control">
         <label for="value">Значение</label>
-        <textarea v-model="value" id="value" rows="3"></textarea>
+        <textarea v-model.trim="value" id="value" rows="3"></textarea>
         </div>
 
         <button @click.prevent="$emit('addInfo',selectTheme,value)" :disabled='value.length < 3' class="btn primary">Добавить</button>
